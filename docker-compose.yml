@@ -18,5 +18,5 @@ ContactSubmit.webapi:
       context: .
       dockerfile: services/ContactSubmit.Server/Dockerfile
     ports:
-      - "0.0.0.0:82:8080"
+      - "0.0.0.0:80:8081"
  
