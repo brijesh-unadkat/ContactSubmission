@@ -196,3 +196,5 @@ PublishScripts/
 .vs
 .suo
 slnx.sqlite
+obj
+bin
