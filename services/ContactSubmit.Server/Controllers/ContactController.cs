@@ -22,7 +22,10 @@ namespace ContactSubmit.Server.Controllers
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
-        
+        /// <summary>
+        /// This method is use for Get all contacts from Database
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         [Route("GetContactDetails")]
         public IActionResult GetContacts()
