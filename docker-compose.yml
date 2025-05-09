@@ -1,6 +1,14 @@
 version: '3.4'
  
 services:
+  ContactSubmit.webapi:
+    image: {{docker_repository}}/ContactSubmitAPI}
+    build:
+      context: .
+      dockerfile: services/ContactSubmit.Server/Dockerfile
+    ports:
+      - "0.0.0.0:80:8081"
+
  # HOSTING FRONTEND WEB on AKS
   ContactSubmit.web:
     image: {{docker_repository}}/ContactSubmitWeb}
@@ -11,12 +19,3 @@ services:
       - "0.0.0.0:80:3000"
     stdin_open: true
     command: yarn start
- 
-ContactSubmit.webapi:
-    image: {{docker_repository}}/ContactSubmitAPI}
-    build:
-      context: .
-      dockerfile: services/ContactSubmit.Server/Dockerfile
-    ports:
-      - "0.0.0.0:80:8081"
- 
