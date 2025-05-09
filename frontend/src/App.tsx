@@ -100,7 +100,7 @@ function ContactForm() {
             }
         </div>
         
-        <button type="submit">Send</button>
+        <button type="submit">Submit</button>
     </form>
     </div>
   
